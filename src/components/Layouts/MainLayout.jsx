@@ -1,7 +1,7 @@
-import Footer from "@components/PageSections/Footer";
+import Footer from "@/components/PageSections/Footer.jsx";
 import Head from "next/head";
-import NavBar from "@/components/Navigation/NavBar";
-import Header from "@/components/PageSections/Header";
+import NavBar from "@/components/Navigation/NavBar.jsx";
+import Header from "@/components/PageSections/Header.jsx";
 
 export default function MainLayout(props) {
 	return (
@@ -13,7 +13,7 @@ export default function MainLayout(props) {
 				<meta name="author" content={props.author} />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
-			<NavBar navProps={props.navigation} />
+			{/* <NavBar navProps={props.navigation} /> */}
 			<main>{props.children}</main>
 
 			<Footer />

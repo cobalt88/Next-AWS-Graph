@@ -1,4 +1,11 @@
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+
 export default function NavBar(props) {
+	const links = props.links;
 	return (
 		<Disclosure as="nav" className="bg-white shadow">
 			{({ open }) => (

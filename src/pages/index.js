@@ -1,4 +1,4 @@
-import MainLayout from "@/components/Layouts/MainLayout";
+import MainLayout from "@/components/Layouts/MainLayout.jsx";
 
 export default function Home() {
 	return (
